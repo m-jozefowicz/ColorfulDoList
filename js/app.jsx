@@ -3,19 +3,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Header from './Components/Header.jsx';
-import NewToDoItem from './Components/NewToDoItem.jsx';
-import ToDoItem from './Components/ToDoItem.jsx';
-import ToDoList from './Components/ToDoList.jsx';
+// import NewToDoItem from './Components/NewToDoItem.jsx';
+// import ToDoList from './Components/ToDoList.jsx';
 
 require("../scss/main.scss");
 
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <div className="app__container">
         <Header />
-        <ToDoList />
-        <NewToDoItem />
+        {/*<ToDoList />
+        <NewToDoItem />*/}
       </div>
     )
   }
@@ -23,7 +22,7 @@ class App extends React.Component {
 
 document.addEventListener('DOMContentLoaded', function(){
   ReactDOM.render (
-    <App />
+    <App />,
     document.getElementById('app')
   )
 });
