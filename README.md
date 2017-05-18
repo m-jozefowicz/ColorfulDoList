@@ -1,5 +1,7 @@
 <h1> ColorfulDoList </h1>
 
+<h3> Application in progress... </h3>
+
 <h3> Description </h3>
 <p>Easy to use, colorfully and small app. Simply to do list! :)</p>
 
