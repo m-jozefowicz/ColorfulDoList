@@ -11,5 +11,7 @@
   <li>React</li>
 </ul>
 
-<h3> HAVE FUN! </h3>
+<h3>Author</h3>
+<p>It's me! <br/> ~Michał Józefowicz</p>
 
+<h3> HAVE FUN! :) </h3>
