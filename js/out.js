@@ -9650,6 +9650,14 @@ var _Header = __webpack_require__(81);
 
 var _Header2 = _interopRequireDefault(_Header);
 
+var _NewToDoItem = __webpack_require__(188);
+
+var _NewToDoItem2 = _interopRequireDefault(_NewToDoItem);
+
+var _ToDoList = __webpack_require__(189);
+
+var _ToDoList2 = _interopRequireDefault(_ToDoList);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -9657,9 +9665,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-// import NewToDoItem from './Components/NewToDoItem.jsx';
-// import ToDoList from './Components/ToDoList.jsx';
 
 __webpack_require__(83);
 
@@ -9678,7 +9683,9 @@ var App = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'app__container' },
-        _react2.default.createElement(_Header2.default, null)
+        _react2.default.createElement(_Header2.default, null),
+        _react2.default.createElement(_ToDoList2.default, null),
+        _react2.default.createElement(_NewToDoItem2.default, null)
       );
     }
   }]);
@@ -9699,7 +9706,7 @@ exports = module.exports = __webpack_require__(86)(undefined);
 
 
 // module
-exports.push([module.i, "* {\n  font-family: 'Barrio', cursive;\n  box-sizing: border-box; }\n\n.app__container {\n  display: flex;\n  flex-direction: column;\n  width: 50vw;\n  height: 80vh;\n  margin: 0 auto;\n  background-color: #8ad0fa; }\n\n.header {\n  display: flex;\n  flex-direction: column;\n  border-bottom: 1px dotted grey; }\n  .header .header__box {\n    background-color: #F08962; }\n    .header .header__box .header__btn {\n      z-index: 3;\n      width: 12.5rem;\n      height: 4rem;\n      font-size: 1.5rem;\n      background-color: #8ad0fa;\n      border: 0;\n      border-bottom: 5px solid #8ad0fa; }\n  .header h2 {\n    align-self: center; }\n", ""]);
+exports.push([module.i, "* {\n  font-family: 'Barrio', cursive;\n  box-sizing: border-box; }\n\n.app__container {\n  display: flex;\n  flex-direction: column;\n  width: 50vw;\n  height: 80vh;\n  margin: 0 auto;\n  background-color: #8ad0fa; }\n\n.header {\n  display: flex;\n  flex-direction: column;\n  border-bottom: 1px dotted grey;\n  height: 20%; }\n  .header .header__box {\n    background-color: #F08962; }\n    .header .header__box .header__btn {\n      z-index: 3;\n      width: 12.5rem;\n      height: 4rem;\n      font-size: 1.5rem;\n      background-color: #8ad0fa;\n      border: 0;\n      border-bottom: 5px solid #8ad0fa; }\n  .header h2 {\n    align-self: center; }\n\n.footer {\n  display: flex;\n  flex-direction: row;\n  background-color: #F08962;\n  height: 15%; }\n  .footer .footer__box {\n    display: flex;\n    align-items: center;\n    align-self: center;\n    margin: 0 auto;\n    width: 90%;\n    height: 80%;\n    background-color: white;\n    padding: 5px; }\n    .footer .footer__box .footer__input--text {\n      width: 90%;\n      height: 60%;\n      border: 0;\n      font-size: 1.3rem; }\n    .footer .footer__box .footer__input--sent {\n      width: 4rem;\n      background-color: lightgrey;\n      margin-left: 0.7rem;\n      border-radius: 60%; }\n      .footer .footer__box .footer__input--sent:hover {\n        background-color: #dbdbdb;\n        cursor: pointer; }\n\n.main {\n  display: flex;\n  height: 65%; }\n", ""]);
 
 // exports
 
@@ -22663,6 +22670,111 @@ module.exports = function (css) {
 	return fixedCss;
 };
 
+
+/***/ }),
+/* 188 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(50);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var NewToDoItem = function (_React$Component) {
+  _inherits(NewToDoItem, _React$Component);
+
+  function NewToDoItem() {
+    _classCallCheck(this, NewToDoItem);
+
+    return _possibleConstructorReturn(this, (NewToDoItem.__proto__ || Object.getPrototypeOf(NewToDoItem)).call(this));
+  }
+
+  _createClass(NewToDoItem, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "footer",
+        { className: "footer" },
+        _react2.default.createElement(
+          "div",
+          { className: "footer__box" },
+          _react2.default.createElement("input", { type: "text", placeholder: "Enter your task...",
+            className: "footer__input--text" }),
+          _react2.default.createElement("img", { src: "./img/add-icon2.png", className: "footer__input--sent",
+            alt: "add-icon" })
+        )
+      );
+    }
+  }]);
+
+  return NewToDoItem;
+}(_react2.default.Component);
+
+exports.default = NewToDoItem;
+
+/***/ }),
+/* 189 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(50);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+// import ToDoItem from './Components/ToDoItem.jsx';
+
+var ToDoList = function (_React$Component) {
+  _inherits(ToDoList, _React$Component);
+
+  function ToDoList() {
+    _classCallCheck(this, ToDoList);
+
+    return _possibleConstructorReturn(this, (ToDoList.__proto__ || Object.getPrototypeOf(ToDoList)).call(this));
+  }
+
+  _createClass(ToDoList, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement("main", { className: "main" });
+    }
+  }]);
+
+  return ToDoList;
+}(_react2.default.Component);
+
+exports.default = ToDoList;
 
 /***/ })
 /******/ ]);

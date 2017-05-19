@@ -1,10 +1,9 @@
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Header from './Components/Header.jsx';
-// import NewToDoItem from './Components/NewToDoItem.jsx';
-// import ToDoList from './Components/ToDoList.jsx';
+import NewToDoItem from './Components/NewToDoItem.jsx';
+import ToDoList from './Components/ToDoList.jsx';
 
 require("../scss/main.scss");
 
@@ -13,8 +12,8 @@ class App extends React.Component {
     return (
       <div className="app__container">
         <Header />
-        {/*<ToDoList />
-        <NewToDoItem />*/}
+        <ToDoList />
+        <NewToDoItem />
       </div>
     )
   }
