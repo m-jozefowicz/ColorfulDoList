@@ -4,9 +4,10 @@
   display: flex;
   flex-direction: column;
   border-bottom: 1px dotted grey;
+  height: 20%;
 
   .header__box {
-    background-color: $header-bg-color;
+    background-color: $updown-bg-color;
 
     .header__btn {
       z-index: 3;
