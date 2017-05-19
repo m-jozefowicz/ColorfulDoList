@@ -1,9 +1,15 @@
+@import "function&colors.scss";
+
+*{
+  font-family: 'Barrio', cursive;
+  box-sizing: border-box;
+}
+
 .app__container{
   display: flex;
-  justify-content: center;
   flex-direction: column;
   width: 50vw;
   height: 80vh;
   margin: 0 auto;
-  background-color: #8ad0fa;
+  background-color: $main-bg-color;
 }

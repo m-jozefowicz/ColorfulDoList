@@ -1,0 +1,25 @@
+@import "function&colors.scss";
+
+.header {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px dotted grey;
+
+  .header__box {
+    background-color: $header-bg-color;
+
+    .header__btn {
+      z-index: 3;
+      width: 12.5rem;
+      height: 4rem;
+      font-size: 1.5rem;
+      background-color: $main-bg-color;
+      border: 0;
+      border-bottom: 5px solid $main-bg-color;
+    }
+  }
+
+  h2{
+    align-self: center;
+  }
+}
