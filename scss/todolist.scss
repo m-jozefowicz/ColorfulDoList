@@ -1,0 +1,49 @@
+@import "function&colors.scss";
+
+.list__todos {
+  display: flex;
+  height: 69%;
+  margin-left: 2rem;
+  flex-direction: column;
+
+  .task {
+    display: flex;
+    width: 90%;
+    height: 30px;
+    background-color: $text-bg-color;
+    padding: -20px;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    .task__text {
+      margin: 5px 0 0 5px;
+    }
+
+    .task__btn {
+
+        button {
+          cursor: pointer;
+          border: 0;
+
+          &:first-child {
+            background-color: $btnOK-bg-color;
+          }
+
+          &:last-child {
+            background-color: $btnDel-bg-color;
+          }
+        }
+
+        .icon-ok {
+          font-size: 1.52rem;
+          background-color: $btnOK-bg-color;
+        }
+
+        .icon-trash-empty {
+          font-size: 1.52rem;
+          background-color: $btnDel-bg-color;
+        }
+
+    }
+  }
+}

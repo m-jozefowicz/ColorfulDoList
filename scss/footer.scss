@@ -2,37 +2,12 @@
 
 .footer {
   display: flex;
-  flex-direction: row;
+  padding: 5px;
+  height: 6%;
   background-color: $updown-bg-color;
-  height: 15%;
 
-  .footer__box {
-    display: flex;
-    align-items: center;
-    align-self: center;
+  p {
     margin: 0 auto;
-    width: 90%;
-    height: 80%;
-    background-color: white;
-    padding: 5px;
-
-    .footer__input--text {
-      width: 90%;
-      height: 60%;
-      border: 0;
-      font-size: 1.3rem;
-    }
-
-    .footer__input--sent {
-      width: 4rem;
-      background-color: lightgrey;
-      margin-left: 0.7rem;
-      border-radius: 60%;
-      &:hover{
-        background-color: lighten(lightgrey, 3%);
-        cursor: pointer;
-      }
-    }
   }
 
 }

@@ -1,8 +1,12 @@
 @import "function&colors.scss";
 
-*{
+* {
   font-family: 'Barrio', cursive;
   box-sizing: border-box;
+}
+
+body {
+  background-color: $body-bg-color;
 }
 
 .app__container{

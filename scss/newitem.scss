@@ -1,0 +1,36 @@
+@import "function&colors.scss";
+
+.input__section {
+  display: flex;
+  height: 15%;
+  flex-direction: column;
+  margin-top: 1.5rem;
+
+  .input__box {
+    // margin-top: 1rem;
+    align-self: center;
+    background-color: $text-bg-color;
+    height: 3rem;
+    width: 100%;
+    border: 0;
+
+    .input__text {
+      width: 80%;
+      height: 3rem;
+      border: 0;
+      padding-left: 10px;
+      font-size: 1.2rem;
+    }
+
+    .input__send {
+      width: 20%;
+      height: 3.1rem;
+      border: 0;
+      background-color: #16BAC5;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  }
+
+
+}
