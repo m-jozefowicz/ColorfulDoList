@@ -1,26 +1,43 @@
 import React from 'react';
 
 class NewToDoItem extends React.Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
+    this.state = {
+      values: "",
+      todos: []
+    }
+  }
+
+  handleSubmit = event => {
+    event.preventDefault();
+
+  }
+
+  handleTaskChange = event => {
+    this.setState({
+      values: event.target.value
+    })
   }
 
   render() {
-    return(
-      <footer className="footer">
-        <div className="footer__box">
+    return (
+      <div className = "input__section">
+        <div className = "input__box">
+            <form onSubmit = {this.handleSubmit}>
+              <input type = "text"
+                     className = "input__text"
+                     placeholder = "Enter your task..."
+                     onChange = {this.handleTaskChange} />
 
-          <input type="text" placeholder="Enter your task..."
-                 className="footer__input--text" />
-          <img src="./img/add-icon2.png" className="footer__input--sent"       
-               alt="add-icon" />
-
+              <input type = "submit"
+                     value = "ADD"
+                     className = "input__send" />
+            </form>
         </div>
-
-      </footer>
+        </div>
     )
   }
-
 }
 
 export default NewToDoItem;

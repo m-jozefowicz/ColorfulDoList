@@ -18,13 +18,12 @@ class Header extends React.Component {
     })
   }
 
-
   render() {
     return (
       <header className="header">
           <div className="header__box">
             <button type="text" className="header__btn" onClick={this.handleEnterName}>
-            {this.state.name}
+                    {this.state.name}
             </button>
           </div>
           <h2> {this.state.titleTask} </h2>
